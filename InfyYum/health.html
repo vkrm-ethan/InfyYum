@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>MeetMe - Resume Website Template</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+    <!-- Menu CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+    <!-- Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+
+
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+              <div class="contents">
+                <h5 id="user-ms" class="script-font wow fadeInUp" data-wow-delay="0.2s">Infy YUM Health</h5>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Area End -->
+
+    </header>
+    <!-- Header Area wrapper End -->
+	 <!-- Counter Area Start-->
+    <section style="height:300px;" class="counter-section counter-section1 section-padding">
+      <div class="container">
+        <div  class="row">
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.3s">
+              <div class="icon"><i class="icon-user"></i></div>
+              <div id="ord-i" style="
+    color: #fff;
+    font-size: 42px;
+    margin-top: 15px;
+    font-weight: 700;
+">183</div>
+              <p>Height(cm)</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon"><i class="icon-user"></i></div>
+              <div id="ord-coun" class="counterUp">86</div>
+              <p>Weight(KG)</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.9s">
+              <div class="icon"><i class="icon-info"></i></div>
+              <div id="time-lef" class="counterUp">25.4</div>
+              <p>BMI</p>
+            </div>
+          </div>
+		   <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.9s">
+              <div class="icon"><i class="icon-clock"></i></div>
+              <div id="time-le" class="counterUp">2800</div>
+              <p>Calories Per Day</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Area End-->
+ <div class="container">
+ <div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="education  fadeInRight" data-wow-delay="0.3s">
+              <ul class="timeline">
+                <li>
+                  <i class="icon-pie-chart"></i>
+                  <h2 class="timelin-title">Food Analysis</h2>
+                </li>
+
+				</ul>
+				</div>
+				</div></div>
+        <div class="row">
+		 <div class="col-lg-3 col-md-3 col-sm-3"></div>
+		          <div class="col-lg-6 col-md-6 col-sm-6">
+<canvas id="myChart" width="600" height="400"></canvas>
+</div>
+ <div class="col-lg-3 col-md-3 col-sm-3"></div>
+</div>
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.js"></script>
+<script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Biriyanies", "Juices", "Combo's", "Junk", "Meals"],
+    datasets: [{
+      label: '# of Times Ordered',
+      data: [12, 19, 3, 5, 2],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)'
+
+      ],
+      borderColor: [
+        'rgba(255,99,132,1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)'
+      ],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    responsive: false,
+    scales: {
+      xAxes: [{
+        ticks: {
+          maxRotation: 90,
+          minRotation: 80
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+});
+</script>
+
+
+   <div id="resume" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="education  fadeInRight" data-wow-delay="0.3s">
+              <ul class="timeline">
+                <li>
+                  <i class="icon-user"></i>
+                  <h2 class="timelin-title">Previous Orders</h2>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Mutton Biriyani</h3>
+                    <span>28-Mar-2019 13:14</span>
+                    <p class="line-text">From Paradise of FC3</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Orange Juice</h3>
+                    <span>29-Mar-2019 10:14</span>
+                    <p class="line-text">From Frootz of FC2</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Naan with chicker pepper masala</h3>
+                    <span>29-Mar-2019 13:14</span>
+                    <p class="line-text">From masala dhaba of fc2</p>
+                  </div>
+                </li>
+				  <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Jigarthanda</h3>
+                    <span>29-Mar-2019 18:14</span>
+                    <p class="line-text">From murugan idly shop of fc1.</p>
+                  </div>
+                </li>
+				  <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Idly 3 nos with vada</h3>
+                    <span>30-mar-2019</span>
+                    <p class="line-text">From carnival of fc1.</p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+	<div id="resume" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="education  fadeInRight" data-wow-delay="0.3s">
+              <ul class="timeline">
+                <li>
+                  <i class="icon-info"></i>
+                  <h2 class="timelin-title">Suggestions</h2>
+                </li>
+
+
+              </ul>
+			  <section style="height:300px;" class="counter-section counter-section2 px-5 section-padding">
+      <div class="container px-5">
+        <div  class="row">
+          <!-- Counter Item -->
+          <div class="col-md-4 col-sm-6 work-counter-widget text-center">
+            <div class="counter  fadeInDown" data-wow-delay="0.3s">
+              <div class="icon"><i class="icon-user"></i></div>
+              <div id="ord-i" style="
+    color: #fff;
+    font-size: 42px;
+    margin-top: 15px;
+    font-weight: 700;
+">Drink water periodically</div>
+              <p>Status</p>
+            </div>
+          </div><div class="col-md-4 col-sm-6 work-counter-widget text-center">
+            <div class="counter fadeInDown" data-wow-delay="0.3s">
+              <div class="icon"><i class="icon-heart"></i></div>
+              <div id="ord-i" style="
+    color: #fff;
+    font-size: 42px;
+    margin-top: 15px;
+    font-weight: 700;
+">Healthy</div>
+              <p>Status</p>
+            </div>
+          </div><div class="col-md-4 col-sm-6 work-counter-widget text-center">
+            <div class="counter fadeInDown" data-wow-delay="0.3s">
+              <div class="icon"><i class="icon-info"></i></div>
+              <div id="ord-i" style="
+    color: #fff;
+    font-size: 42px;
+    margin-top: 15px;
+    font-weight: 700;
+">avoid junk</div>
+              <p>Suggestion</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+
+          <!-- Counter Item -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="icon-arrow-up"></i>
+    </a>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+    <script src="assets/js/map.js"></script>
+      <script>
+var response="ORD0100~10~16.8~ORD0098-ORD0096-ORD0095-ORD0094-ORD0097-ORD0092-ORD0091-ORD0036-ORD0035-ORD0099-";
+var splitString=response.split("~");
+var orderId=splitString[0];
+$('#ord-id').html(orderId);
+
+var prevOrders=splitString[1];
+$('#ord-count').html(prevOrders);
+var intOrderscount=parseInt(prevOrders);
+var messsageUser="Your Order is ready";
+if(intOrderscount>10){
+messsageUser="Please wait!!!! the counter is getting crowded";
+}else if(intOrderscount>5){
+messsageUser="Please wait!!!! your order is getting prepared";
+}
+else if(intOrderscount>1){
+messsageUser="Hey !!!! your order willl be ready in few minutes";
+
+}
+else if(intOrderscount==1){
+messsageUser="Hey !!!! your order is the next";
+}
+$('#user-msg').html(messsageUser);
+var timeLeft=splitString[2];
+$('#time-left').html(timeLeft);
+if(intOrderscount==0){
+$('#ready-hide').hide();
+}
+
+
+
+</script>
+  </body>
+</html>

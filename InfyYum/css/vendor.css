@@ -1,0 +1,15 @@
+.customHeader{
+  padding: 10px;
+  font-size:40px;
+}
+.customHeaderName{
+  color:#4846b7;
+}
+.dbStatus{
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+}
+
+#hearts { color: #FF0000;}
+#hearts-existing { color: #87bad7;}
